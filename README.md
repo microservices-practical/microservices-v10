@@ -1,12 +1,12 @@
-# Microservices - The Practical Way - v9
+# Microservices - The Practical Way - v10
 
-This project contains the version 9 of the application that is developed under the scope of the book *Learn Microservices with Spring Boot*. You can get a copy of the book on [Apress](http://www.apress.com/gp/book/9781484231647).
+This project contains the version 10 of the application that is developed under the scope of the book *Learn Microservices with Spring Boot*. You can get a copy of the book on [Apress](http://www.apress.com/gp/book/9781484231647).
 
 ## Idea
 
 These projects, included in [Microservices-Practical repositories](https://github.com/microservices-practical), illustrate how to start an application from scratch and then evolve it to become a full microservices environment.
 
-This version introduces end to end testing with Cucumber JVM.
+This version has exactly the same functionality as the v9 version, but the projects have been upgraded to Spring Boot 2.0, thus applying some minor changes in code to make them work.
 
 ## Contents
 
