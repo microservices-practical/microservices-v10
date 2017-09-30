@@ -3,14 +3,15 @@ package microservices.book.multiplication.configuration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @author moises.macero
  */
 @Configuration
 @EnableWebMvc
-public class WebConfiguration extends WebMvcConfigurerAdapter {
+//BOOT2 changed to interface WebMvcConfigurer instead of subclass of WebMvcConfigurerAdapter
+public class WebConfiguration implements WebMvcConfigurer {
 
     /**
      * Enables Cross-Origin Resource Sharing (CORS)
