@@ -12,6 +12,24 @@ function updateLeaderBoard() {
     });
 }
 
+function updateStats(userId) {
+    $.ajax({
+        url: SERVER_URL + "/stats?userId=" + userId,
+        success: function(data) {
+            $('#stats-div').show();
+            $('#stats-user-id').empty().append(userId);
+            $('#stats-score').empty().append(data.score);
+            $('#stats-badges').empty().append(data.badges.join());
+        },
+        error: function(data) {
+            $('#stats-div').show();
+            $('#stats-user-id').empty().append(userId);
+            $('#stats-score').empty().append(0);
+            $('#stats-badges').empty();
+        }
+    });
+}
+
 $(document).ready(function() {
 
     updateLeaderBoard();

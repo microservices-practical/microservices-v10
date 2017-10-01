@@ -37,16 +37,25 @@
             </p>
             <div class="result-message"></div>
 
-            <h2>Stats</h2>
-            <table id="stats" class="table">
-                <tr>
-                    <th>Attempt ID</th>
-                    <th>Multiplication</th>
-                    <th>You entered</th>
-                    <th>Correct?</th>
-                </tr>
-                <tbody id="stats-body"></tbody>
-            </table>
+            <div id="stats-div" style="display: none;">
+                <h2>Your statistics</h2>
+                <table id="stats" class="table">
+                    <tbody>
+                    <tr>
+                        <td class="info">User ID:</td>
+                        <td id="stats-user-id"></td>
+                    </tr>
+                    <tr>
+                        <td class="info">Score:</td>
+                        <td id="stats-score"></td>
+                    </tr>
+                    <tr>
+                        <td class="info">Badges:</td>
+                        <td id="stats-badges"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </div>
         <div class="col-md-6">
@@ -60,6 +69,19 @@
             </table>
             <div class="text-right">
                 <button id="refresh-leaderboard" class="btn btn-default" type="submit">Refresh</button>
+            </div>
+
+            <div id="results-div" style="display: none;">
+                <h2>Your latest attempts</h2>
+                <table id="results" class="table">
+                    <tr>
+                        <th>Attempt ID</th>
+                        <th>Multiplication</th>
+                        <th>You entered</th>
+                        <th>Correct?</th>
+                    </tr>
+                    <tbody id="results-body"></tbody>
+                </table>
             </div>
         </div>
     </div>
